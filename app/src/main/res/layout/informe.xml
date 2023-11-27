@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".informeJa"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:screenOrientation="portrait" >
 <TableRow
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -56,6 +57,14 @@
             android:inputType="textPersonName"
             android:minWidth="350dip"
             />
+    </TableRow>
+    <TableRow>
+        <Button
+
+            android:layout_width="20dp"
+            android:layout_height="20dp">
+
+        </Button>
     </TableRow>
     <TableRow>
      <ImageButton
