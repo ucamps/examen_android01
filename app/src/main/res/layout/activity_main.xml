@@ -1,18 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:src="@drawable/logo"
 
-    <TextView
-        android:layout_width="wrap_content"
+    ></ImageView>
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nom: " />
+            <EditText
+                android:id="@+id/nomAvi"
+                android:layout_width="match_parent"
+                android:contentDescription="nom del avi"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:minWidth="350dip"
+                />
+        </TableRow>
+    </TableLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:contentDescription="botones"
+       android:gravity="center"
+       >
+       <Button
+           android:id="@+id/contacte"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:text="Contactes"
+           android:background="@color/red"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+           android:layout_marginRight="10dp"
+           ></Button>
+       <Button
+           android:id="@+id/informe"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:text="Informe"
+           android:background="@color/blue"
+           ></Button>
+   </LinearLayout>
+
+</LinearLayout>

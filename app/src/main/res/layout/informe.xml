@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".informeJa"
+    android:orientation="vertical">
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/avi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="Avi"
+        android:textAlignment="center"
+        android:textColor="#818285"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="monospace"></TextView>
+</TableRow>
+<TableRow>
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"></DatePicker>
+</TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Comentari"
+            android:textSize="15sp"
+            ></TextView>
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_width="match_parent"
+            android:contentDescription="nom del avi"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:minWidth="350dip"
+            />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_width="match_parent"
+            android:contentDescription="nom del avi"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:minWidth="350dip"
+            />
+    </TableRow>
+    <TableRow>
+     <ImageButton
+         android:id="@+id/inicio"
+         android:layout_width="20dp"
+         android:layout_height="20dp">
+
+     </ImageButton>
+    </TableRow>
+</TableLayout>
